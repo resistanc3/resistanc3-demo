@@ -2,7 +2,6 @@ import { MoralisProvider } from "react-moralis";
 import { NotificationProvider } from "web3uikit";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../resistanc3/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -19,19 +19,6 @@ export default function Home() {
       </Head>
       <Header />
 
-      <body>
-        <div className={styles.title}>
-          <h2>We are a DAO community</h2>
-          <img src="https://github.com/resistanc3/resistanc3-webapp/blob/f6aca0d4fc8635af1d08ab65828e5eebf3fed314/img/resistanc3_High_Res_Logo.png"></img>
-          
-      
-        </div>
-
-        <div className={styles.main}></div>
-
-      </body>
-
-
       {isWeb3Enabled ? (
         <div>
           {supportedChains.includes(parseInt(chainId).toString()) ? (

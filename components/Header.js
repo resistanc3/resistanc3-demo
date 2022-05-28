@@ -1,5 +1,4 @@
 import { ConnectButton } from "web3uikit";
-import "../resistanc3/Navbar";
 import "../styles/Home.module.css"
 
 export default function Header() {
