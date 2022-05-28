@@ -1,16 +1,16 @@
-
 /* Custom CSS */
 
 #mainNavbar {
   font-size: 1.5rem;
   font-weight: 100;
   background-color: blue;
+  color: green;
   width: 100%;
   font-family: 'Press Start 2P', cursive;
 }
 
 
-
+/* Everything else */
 
 .container {
   padding: 0 2rem;
@@ -24,6 +24,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: red;
+  color: white;
 }
 
 .footer {
@@ -57,6 +59,8 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  background-color: black;
+  color: white;
 }
 
 .title,
@@ -71,7 +75,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: black;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
