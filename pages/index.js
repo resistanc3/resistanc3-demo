@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import LotteryEntrance from "../components/LotteryEntrance";
 import { useMoralis } from "react-moralis";
+import { Logo } from "../img/resistanc3_High_Res_Logo.png";
 
 
 const supportedChains = ["31337", "4"];
@@ -18,6 +19,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
+      <div className={styles.title}>
+        <h2>We are a DAO Community</h2>
+        <img src="public/vercel.svg"></img>
+        <img src="https://github.com/itsjenm/resistanc3/blob/f23ff35722bd34230acb2743bbcf05ddbdaec0b2/img/resistanc3_High_Res_Logo.png"></img>
+
+      </div>
 
       {isWeb3Enabled ? (
         <div>
