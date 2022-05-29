@@ -1,15 +1,32 @@
+/* Custom CSS */
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+  background-color: blue;
+  color: green;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+/* Everything else */
+
 .container {
-  padding: 0 2rem;
+  
+  background-color: black;
+  color: white;
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  color: #6ABD45;
 }
 
 .footer {
@@ -19,6 +36,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: #00f382;
 }
 
 .footer a {
@@ -43,7 +61,38 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  background-color: black;
+  color: white;
 }
+
+
+/* style for pointer lines */
+.pointer {
+  margin-top: 40px;
+  position: relative;
+  width: 80%;
+  left: 20%;
+  height: 30px; 
+  color: #00f382;
+  background-color: #1B317B;
+  border-radius: 30px;
+  border-top-right-radius: 3px;
+}
+
+
+.pointer2 {
+  position: relative;
+  width: 90%;
+  height: 30px;
+  left: 10%; 
+  top: 16%;
+  color: #00f382;
+  background-color: #1B317B;
+  border-radius: 30px;
+  border-top-right-radius: 3px;
+}
+
+
 
 .title,
 .description {
@@ -57,7 +106,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: black;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -107,6 +156,9 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+
+
+
 
 @media (max-width: 600px) {
   .grid {

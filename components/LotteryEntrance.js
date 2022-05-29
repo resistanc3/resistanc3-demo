@@ -66,7 +66,7 @@ export default function LotteryEntrance() {
         // })
         const entranceFeeFromCall = (await getEntranceFee()).toString()
         const numPlayersFromCall = (await getPlayersNumber()).toString()
-        const recentWinnerFromCall = await getRecentWinner()
+        const recentWinnerFromCall = (await getRecentWinner())
         setEntranceFee(entranceFeeFromCall)
         setNumberOfPlayers(numPlayersFromCall)
         setRecentWinner(recentWinnerFromCall)
