@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import LotteryEntrance from "../components/LotteryEntrance";
 import { useMoralis } from "react-moralis";
-import { Logo } from "../img/resistanc3_High_Res_Logo.png";
+import { NFT } from 'web3uikit';
 
 
 const supportedChains = ["31337", "4"];
@@ -19,14 +19,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      
+      
 
       <div className={styles.title}>
-        <h2>We are a DAO Community</h2>
-        <img src="public/vercel.svg"></img>
-        <img src="https://github.com/itsjenm/resistanc3/blob/f23ff35722bd34230acb2743bbcf05ddbdaec0b2/img/resistanc3_High_Res_Logo.png"></img>
+          <h1>We are a DAO Community</h1>
+          <div className={styles.pointer}></div>
+          <img src="https://github.com/itsjenm/resistanc3/blob/main/img/resistanc3_High_Res_Logo.png?raw=true" className="logo" style={{ width: "40%", height: "auto"}}></img>
+          
+
+          <div className={styles.pointer2}>
+          </div>
 
       </div>
 
+    
       {isWeb3Enabled ? (
         <div>
           {supportedChains.includes(parseInt(chainId).toString()) ? (
@@ -40,6 +47,18 @@ export default function Home() {
       ) : (
         <div>Please connect to a Wallet</div>
       )}
+      <div className={styles.main}>
+      <h3>How it works\\</h3>
+      <p>
+      <NFT address="0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB"
+  chain="eth"
+  fetchMetadata
+  metadata={{}}
+  name="punk-nft"
+  tokenId="1" />
+      </p>
+      </div>
     </div>
   );
+
 }

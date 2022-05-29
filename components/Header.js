@@ -3,10 +3,7 @@ import "../styles/Home.module.css"
 
 export default function Header() {
     return (
-<nav className="navbar navbar-expand-lg navbar-dark justify-content-center" id="#mainNavbar" style={{ backgroundColor: "#1B317B"}}>
-    <a className="navbar-brand" href="#">
-      Resistanc3
-    </a>
+<nav className="navbar navbar-expand-lg navbar-dark" id="#mainNavbar" style={{ backgroundColor: "#1B317B"}}>
     <button
       className="navbar-toggler"
       type="button"
@@ -19,7 +16,7 @@ export default function Header() {
       <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+    <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item active px-4">
           <a className="nav-link" href="#">
